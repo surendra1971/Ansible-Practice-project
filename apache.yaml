@@ -1,9 +1,9 @@
 - name: install package
   hosts: all
   tasks:
-    - name: Install apache
+    - name: Install httpd
       ansible.builtin.package:
-           name: apache
+           name: httpd
            state: present
 
     - name: "web Server start"
