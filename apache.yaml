@@ -1,12 +1,14 @@
-- hosts: localhost
+- name: install package
+  hosts: all
   tasks:
-        - name: Install apache
-          ansible.builtin.package:
+    - name: Install apache
+      ansible.builtin.package:
            name: apache
            state: present
 
-- name: "web Server start"
-  service:
+    - name: "web Server start"
+      service:
        name: "httpd"
        state: started
        enabled: yes
+
