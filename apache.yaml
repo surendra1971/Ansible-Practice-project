@@ -3,6 +3,7 @@
   tasks:
     - name: Install httpd
       ansible.builtin.package:
+           become: yes 
            name: httpd
            state: present
 
