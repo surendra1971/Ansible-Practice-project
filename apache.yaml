@@ -1,9 +1,10 @@
 - name: install package
   hosts: all
+  become: yes 
   tasks:
     - name: Install httpd
       ansible.builtin.package:
-           become: yes 
+           
            name: httpd
            state: present
 
