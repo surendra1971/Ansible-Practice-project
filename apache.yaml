@@ -1,4 +1,4 @@
-- hosts: webserver
+- hosts: localhost
   vars_files:
          - variables
   tasks:
